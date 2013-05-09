@@ -19,8 +19,8 @@ This plugin requires the following console variables to be specified:
 * `mdb_serverid` - This should be the MitchDB server ID for the server you are using.
   * Each server in your account has a different ID.
 
-### Player Commands
-* `mdb_upload_demo <DemoFile>` - This will submit the demo file for review. This might take some time depending on how big the demo is.
+## Usage
+This plugin will listen for execution of `tv_record <DemoName>` and `tv_stoprecord`. When `tv_stoprecord` is called, the demo will be submitted to MitchDB.
 
 
 ## Help & Support
@@ -28,3 +28,6 @@ If you have trouble with this plugin, please contact MitchDB support. If you fin
 
 ## Development
 You can use `make compile` to compile the plugin. If you want to create a Zip archive to install on your game server, you can run `make zip` which will create a zip archive inside the root folder.
+
+## Acknowledgements
+Many thanks to [Peace-Maker](https://forums.alliedmods.net/member.php?u=41418)'s [tAutoDemoUpload](https://forums.alliedmods.net/showthread.php?p=1517461) plugin. Much of the demo handling is based off his plugin.
